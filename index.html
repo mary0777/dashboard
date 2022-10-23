@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="dashboard">
+
+      <div class="sidebar">
+
+        <button class="burger burger--open" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only">Открыть меню</span>
+        </button>
+
+        <nav class="menu">
+
+          <button class="burger burger--close" type="button">
+            <span class="burger__line"></span>
+            <span class="sr-only">Закрыть меню</span>
+          </button>
+
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="Logo" width="195" height="39">
+            <span class="logo__text">
+              v.01
+            </span>
+          </a>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--dashboard menu__link--noarrow" href="#">
+                Dashboard
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--product" href="#">
+                Product
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--customers menu__link--active" href="#">
+                Customers
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--income" href="#">
+                Income
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--promote" href="#">
+                Promote
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--help" href="#">
+                Help
+              </a>
+            </li>
+          </ul>
+
+          <figure class="menu__figure">
+            <img class="menu__img" src="images/photo__Evano.png" alt="Photo by Evano" width="42" height="42">
+            <figcaption class="menu__name">
+              Evano
+              <cite class="menu__profession">
+                Project Manager
+              </cite>
+            </figcaption>
+          </figure>
+        </nav>
+      </div>
+
+      <div class="customers">
+        <span class="customers__heading">
+          Hello Evano 👋🏼,
+        </span>
+
+        <div class="customers__inner">
+          <div class="customers__top">
+            <h1 class="customers__title">
+              All Customers
+              <span class="customers__subtitle">
+                Active Members
+              </span>
+            </h1>
+            <form class="customers__form" action="">
+              <label class="search" for="search">
+                <input class="search__input" type="text" id="search" name="search" placeholder="Search">
+                <button class="search__btn" type="submit"></button>
+                <span class="sr-only">
+                  Search
+                </span>
+              </label>
+            </form>
+          </div>
+
+          <table class="customers__table">
+
+            <thead class="customers__thead">
+              <tr class="customers__row">
+                <th class="customers__name">
+                  Customer Name
+                </th>
+                <th class="customers__name">
+                  Company
+                </th>
+                <th class="customers__name">
+                  Phone Number
+                </th>
+                <th class="customers__name">
+                  Email
+                </th>
+                <th class="customers__name">
+                  Country
+                </th>
+                <th class="customers__name">
+                  Status
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="customers__tbody">
+              <tr class="customers__row customers__row--active">
+                <td class="customers__cell" data-label="Customer Name">
+                  Jane Cooper
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Microsoft
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:2255550118">
+                    (225) 555-0118
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:jane@microsoft.com">
+                    jane@microsoft.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  United States
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--inactive">
+                <td class="customers__cell" data-label="Customer Name">
+                  Floyd Miles
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Yahoo
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:2055550100">
+                    (205) 555-0100
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:floyd@yahoo.com">
+                    floyd@yahoo.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Kiribati
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--inactive">
+                <td class="customers__cell" data-label="Customer Name">
+                  Ronald Richards
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Adobe
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:3025550107">
+                    (302) 555-0107
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:ronald@adobe.com">
+                    ronald@adobe.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Israel
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--active">
+                <td class="customers__cell" data-label="Customer Name">
+                  Marvin McKinney
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Tesla
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:2525550126">
+                    (252) 555-0126
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:marvin@tesla.com">
+                    marvin@tesla.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Iran
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--active">
+                <td class="customers__cell" data-label="Customer Name">
+                  Jerome Bell
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Google
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:6295550129">
+                    (629) 555-0129
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:jerome@google.com">
+                    jerome@google.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Réunion
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--active">
+                <td class="customers__cell" data-label="Customer Name">
+                  Kathryn Murphy
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Microsoft
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:4065550120">
+                    (406) 555-0120
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:kathryn@microsoft.com">
+                    kathryn@microsoft.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Curaçao
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--active">
+                <td class="customers__cell" data-label="Customer Name">
+                  Jacob Jones
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Yahoo
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:2085550112">
+                    (208) 555-0112
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:jacob@yahoo.com">
+                    jacob@yahoo.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Brazil
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="customers__row customers__row--inactive">
+                <td class="customers__cell" data-label="Customer Name">
+                  Kristin Watson
+                </td>
+                <td class="customers__cell" data-label="Company">
+                  Facebook
+                </td>
+                <td class="customers__cell" data-label="Phone Number">
+                  <a class="customers__link" href="tel:7045550127">
+                    (704) 555-0127
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Email">
+                  <a class="customers__link" href="mailto:kristin@facebook.com">
+                    kristin@facebook.com
+                  </a>
+                </td>
+                <td class="customers__cell" data-label="Country">
+                  Åland Islands
+                </td>
+                <td class="customers__cell" data-label="Status">
+                  <button class="customers__btn">
+                    <span class="sr-only">
+                      Status customers
+                    </span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="customers__bottom">
+            <span class="customers__num">
+              Showing data 1 to 8 of 256K entries
+            </span>
+
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--prev">
+                  <span class="sr-only">
+                    Go to previous page
+                  </span>
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--active" href="#">
+                  1
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">
+                  2
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">
+                  3
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">
+                  4
+                </a>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__link pagination__link--point">
+                  ...
+                </span>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">
+                  40
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next" href="#">
+                  <span class="sr-only">
+                    Go to next page
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

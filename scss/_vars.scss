@@ -1,0 +1,41 @@
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin r($width) {
+ @media (max-width: #{$width}px) {
+   @content;
+  }
+}
+
+$r-sm: 576;
+$r-md: 768;
+$r-lg: 992;
+$r-xl: 1200;
+  
+$burgerWidth: 30px;
+$burgerHeight: 20px;
+$burgerLineHeight: 2px;
+$burgerColor: #000000;
+
+$c-black: #000;
+$c-white: #fff;
+$c-default: #292d32;
+$c-bg: #f9fbff;
+$c-gray-200: #b5b7c0;
+$c-gray-300: #eeeeee;
+$c-gray-500: #9197b3;
+$c-gray-800: #404b52;
+$c-green: #008767;
+$c-green-200: #16C098;
+$c-red: #df0404;
+$c-red-200: #ffc5c5;
+$c-purple: #5932ea;
+
+
+
+
+
+
